@@ -10,9 +10,9 @@
 <body>
     <!-- common header -->
      <ul>
-        <li><a th:href="/home" th:href="@{/home}">Home</a></li>
-        <li><a th:href="/about" th:href="@{/about}">About</a></li>
-        <li><a th:href="/services" th:href="@{/services}">Services</a></li>
+        <li><a th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/about}">About</a></li>
+        <li><a th:href="@{/services}">Services</a></li>
      </ul>
     <!-- main content -->
     <section th:replace="${content}"></section>
