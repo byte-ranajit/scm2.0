@@ -1,13 +1,9 @@
-package errorhandler;
+package com.scm.errorhandler;
 
 import java.time.LocalDateTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-
-/**
- * ErrorResponse
- */
 
 @Getter
 @AllArgsConstructor
