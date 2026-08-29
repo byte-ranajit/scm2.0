@@ -13,13 +13,13 @@ public class PageController {
         return "home";
     }
 
-    @GetMapping("/about")
+    @GetMapping("/abou")
     public String about() {
-        return "about";
+        return "abou";
     }
 
-    @GetMapping("/services")
+    @GetMapping("/service")
     public String services() {
-        return "services";
+        return "about";
     }
 }
