@@ -1,4 +1,22 @@
-<div th:fragment="parent(content)">
-    <h1>this is parent fragment</h1>
-    <div th:insert="${content}"></div>
-</div>
+<!DOCTYPE html>
+<html lang="en" th:fragment="parent(content,title)" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{/css/output.css}">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous" />
+    <title th:replace="${title}">SCM</title>
+</head>
+<body>
+    <!-- common header -->
+     <ul>
+        <li><a th:href="@{/home}">Home</a></li>
+        <li><a th:href="@{/about}">About</a></li>
+        <li><a th:href="@{/services}">Services</a></li>
+     </ul>
+    <!-- main content -->
+    <section th:replace="${content}"></section>
+    <!-- flow bite content -->
+     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</body>
+</html>

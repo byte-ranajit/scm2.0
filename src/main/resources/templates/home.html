@@ -1,23 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"
-      xmlns:th="http://www.thymeleaf.org">
-
+<html lang="en" th:replace="~{base :: parent(~{::#content}, ~{::title})}" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>SCM</title>
-
-    <link rel="stylesheet"
-          th:href="@{/css/output.css}">
+    <title>Home</title>
 </head>
-
 <body>
-
-    <h1 class="text-4xl font-bold text-blue-600">
-        Hello Spring Boot + Thymeleaf + Tailwind!
-    </h1>
-
+    <div id="content">
+        <h1>Home</h1>
+        <p>This is the home page content.</p>
+    </div>
 </body>
-
 </html>
